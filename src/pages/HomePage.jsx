@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import ProductCard from "../components/products/ProductCard.jsx";
+import NavBar from "../components/navigation/NavBar.jsx";
 
 function HomePage() {
     const [data, setData] = useState(null);
@@ -31,10 +33,26 @@ function HomePage() {
     }, [data]);
 
     return (
+        <>
+        <div><NavBar/></div>
         <div>
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the main page of our application.</p>
+            
+            {data ? (
+                <div>
+                    <h2>Our Products</h2>
+                    <ul>
+                        {data.map((product) => (
+                            <ProductCard prodImg={product.image}
+                            prodName={product.name}
+                            prodPrice={product.price} />
+                        ))}
+                    </ul>
+                </div>
+            ) : (
+                <p>Loading products...</p>
+            )}
         </div>
+        </>
     );
 }
 
