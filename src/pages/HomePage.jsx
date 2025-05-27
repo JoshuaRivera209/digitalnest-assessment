@@ -34,7 +34,6 @@ function HomePage() {
 
     return (
         <>
-        <div><NavBar/></div>
         <div>
             
             {data ? (
@@ -42,7 +41,8 @@ function HomePage() {
                     <h2>Our Products</h2>
                     <ul>
                         {data.map((product) => (
-                            <ProductCard prodImg={product.image}
+                            <ProductCard key={product.id} prodId={product.id}
+                            prodImg={product.image}
                             prodName={product.name}
                             prodPrice={product.price} />
                         ))}
