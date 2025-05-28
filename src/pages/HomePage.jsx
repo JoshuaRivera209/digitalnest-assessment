@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ProductCard from "../components/products/ProductCard.jsx";
-import NavBar from "../components/navigation/NavBar.jsx";
 
 function HomePage() {
     const [data, setData] = useState(null);

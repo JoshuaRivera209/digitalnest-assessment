@@ -1,5 +1,3 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ProductDetailsCard from '../components/products/ProductDetailsCard.jsx';
@@ -35,7 +33,6 @@ function ProductDetails() {
 
     return (
         <div className="prodDetailsContainer">
-            
             <ProductDetailsCard image={product.image}
                 name={product.name}
                 price={product.price}

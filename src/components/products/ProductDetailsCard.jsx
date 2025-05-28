@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import '../../styles/index.css'; // Assuming you have a CSS file for styling
+import '../../styles/index.css';
 
 
 function ProductCard(props) {
