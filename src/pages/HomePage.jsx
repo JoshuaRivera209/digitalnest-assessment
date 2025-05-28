@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ProductCard from "../components/products/ProductCard.jsx";
-import NavBar from "../components/navigation/NavBar.jsx";
 
 function HomePage() {
     const [data, setData] = useState(null);
@@ -34,15 +33,15 @@ function HomePage() {
 
     return (
         <>
-        <div><NavBar/></div>
         <div>
             
             {data ? (
                 <div>
-                    <h2>Our Products</h2>
-                    <ul>
+                    <h2 className="productListHeader">Our Products</h2>
+                    <ul className="productList">
                         {data.map((product) => (
-                            <ProductCard prodImg={product.image}
+                            <ProductCard key={product.id} prodId={product.id}
+                            prodImg={product.image}
                             prodName={product.name}
                             prodPrice={product.price} />
                         ))}
