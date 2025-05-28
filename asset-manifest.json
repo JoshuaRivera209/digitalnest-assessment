@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/digitalnest-assessment/static/css/main.c72d43f1.css",
-    "main.js": "/digitalnest-assessment/static/js/main.05af58a7.js",
+    "main.js": "/digitalnest-assessment/static/js/main.b0d4f3c6.js",
     "static/js/453.6e1ecf87.chunk.js": "/digitalnest-assessment/static/js/453.6e1ecf87.chunk.js",
     "static/media/digitalNestLogo.png": "/digitalnest-assessment/static/media/digitalNestLogo.6d9e89b1af989855863b.png",
     "index.html": "/digitalnest-assessment/index.html",
     "main.c72d43f1.css.map": "/digitalnest-assessment/static/css/main.c72d43f1.css.map",
-    "main.05af58a7.js.map": "/digitalnest-assessment/static/js/main.05af58a7.js.map",
+    "main.b0d4f3c6.js.map": "/digitalnest-assessment/static/js/main.b0d4f3c6.js.map",
     "453.6e1ecf87.chunk.js.map": "/digitalnest-assessment/static/js/453.6e1ecf87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c72d43f1.css",
-    "static/js/main.05af58a7.js"
+    "static/js/main.b0d4f3c6.js"
   ]
 }
