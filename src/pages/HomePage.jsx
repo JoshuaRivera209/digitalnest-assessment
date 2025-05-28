@@ -22,14 +22,7 @@ function HomePage() {
             }
         };
         fetchData();
-    }, []); 
-
-    // temp console log to see if data looks good
-    useEffect(() => {
-        if (data) {
-            console.log("Data fetched successfully:", data);
-        }
-    }, [data]);
+    }, []);
 
     return (
         <>

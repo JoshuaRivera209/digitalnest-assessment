@@ -6,6 +6,7 @@ function ProductDetails() {
     const { prodId } = useParams();
     const [product, setProduct] = useState(null);
 
+    // fetch product details based on product id found in URL parameters
     useEffect(() => {
         const getProductDetails = async () => {
             try {
@@ -26,10 +27,10 @@ function ProductDetails() {
         getProductDetails();
     }, [prodId]);
 
+    // make sure we have product data before rendering anything to avoid errors
     if (!product) {
         return <p>Loading product details...</p>;
     }
-    console.log("product info:" + product)
 
     return (
         <div className="prodDetailsContainer">
