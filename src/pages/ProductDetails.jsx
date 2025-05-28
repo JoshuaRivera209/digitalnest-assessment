@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import ProductDetailsCard from '../components/products/ProductDetailsCard.jsx';
 
 function ProductDetails() {
     const { prodId } = useParams();
@@ -33,18 +34,14 @@ function ProductDetails() {
     console.log("product info:" + product)
 
     return (
-        <>
-            <Card className="prodCard" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={product.image} />
-                <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
-                    <Card.Text>
-                        {`$${product.price.toFixed(2)}`}
-                    </Card.Text>
-                    <Button variant="primary" onClick={() => alert('Added to cart!')}>Add to Cart</Button>
-                </Card.Body>
-            </Card>
-        </>
+        <div className="prodDetailsContainer">
+            
+            <ProductDetailsCard image={product.image}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+                />
+        </div>
     )
 };
 

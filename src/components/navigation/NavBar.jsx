@@ -9,9 +9,12 @@ import '../../styles/index.css';
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-        <img src={digitalNestLogo} alt="Digital Nest Logo" className="navbar-logo" />
       <Container>
-        <Navbar.Brand>DigitalNest Store</Navbar.Brand>
+        <Navbar.Brand>
+            <img src={digitalNestLogo} alt="Digital Nest Logo" className="navbar-logo" />
+            {" "}
+            DigitalNest Store
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

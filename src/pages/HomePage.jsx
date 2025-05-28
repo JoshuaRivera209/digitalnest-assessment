@@ -38,8 +38,8 @@ function HomePage() {
             
             {data ? (
                 <div>
-                    <h2>Our Products</h2>
-                    <ul>
+                    <h2 className="productListHeader">Our Products</h2>
+                    <ul className="productList">
                         {data.map((product) => (
                             <ProductCard key={product.id} prodId={product.id}
                             prodImg={product.image}
