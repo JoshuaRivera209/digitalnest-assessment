@@ -6,7 +6,7 @@ import NavBar from './components/navigation/NavBar.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/digitalnest-assessment">
       <NavBar/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
